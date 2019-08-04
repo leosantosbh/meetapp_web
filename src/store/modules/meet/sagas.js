@@ -8,7 +8,7 @@ export function* addMeetup({ payload }) {
   try {
     const { titulo, descricao, date, local, banner_id } = payload;
 
-    yield call(api.post, 'mymeets', {
+    yield call(api.post, 'metts', {
       titulo,
       descricao,
       date,
